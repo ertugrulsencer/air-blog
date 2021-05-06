@@ -8,6 +8,17 @@
   </div>
 </template>
 
+<script>
+export default {
+  metaInfo: {
+    titleTemplate: "%s | Air Blog",
+    htmlAttrs: {
+      lang: "tr",
+    },
+  },
+};
+</script>
+
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
