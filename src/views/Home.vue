@@ -1,6 +1,8 @@
 <template>
   <main>
-    <h1>Ana Sayfa</h1>
+    <div class="container">
+      <h1>Ana Sayfa</h1>
+    </div>
   </main>
 </template>
 
