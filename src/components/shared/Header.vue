@@ -1,11 +1,37 @@
 <template>
   <header class="header">
-    <h3>Burası Header</h3>
+    <div class="container">
+      <router-link :to="{ name: 'Home' }" class="logo">Air Blog</router-link>
+      <Nav />
+    </div>
   </header>
 </template>
 
 <script>
-export default {};
+import Nav from "./Nav";
+export default {
+  name: "Header",
+  components: {
+    Nav,
+  },
+};
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+@import "@/assets/scss/_mixins.scss";
+header.header {
+  @include flex;
+  height: 62px;
+  background: #ffffff;
+  box-shadow: 0 2px 18px -4px var(--gray);
+  .container {
+    @include flex(space-between);
+    .logo {
+      color: var(--primary);
+      font-size: 1.65rem;
+      font-weight: 700;
+      font-family: "Lobster Two";
+    }
+  }
+}
+</style>
