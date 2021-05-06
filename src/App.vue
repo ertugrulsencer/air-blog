@@ -1,15 +1,20 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <div class="wrapper">
+    <AppHeader />
     <router-view />
+    <AppFooter />
   </div>
 </template>
 
 <script>
+import Header from "@/components/shared/Header";
+import Footer from "@/components/shared/Footer";
 export default {
+  name: "App",
+  components: {
+    AppHeader: Header,
+    AppFooter: Footer,
+  },
   metaInfo: {
     titleTemplate: "%s | Air Blog",
     htmlAttrs: {
@@ -20,7 +25,7 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
+.wrapper {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
