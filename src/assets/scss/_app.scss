@@ -19,8 +19,7 @@ body {
 .wrapper {
   height: 100%;
   main {
-    height: calc(100% - (62px + 48px));
-    overflow-y: auto;
+    min-height: calc(100% - (62px + 48px));
     .container {
       height: 100%;
     }

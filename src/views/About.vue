@@ -1,7 +1,9 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <main>
+    <div class="container">
+      <h1>Hakkımızda</h1>
+    </div>
+  </main>
 </template>
 <script>
 export default {

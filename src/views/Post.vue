@@ -1,5 +1,9 @@
 <template>
-  <h1>Post: [{{$route.params.key}}] </h1>
+  <main>
+    <div class="container">
+      <h1>Post: [{{ $route.params.key }}]</h1>
+    </div>
+  </main>
 </template>
 
 <script>
