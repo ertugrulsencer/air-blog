@@ -20,7 +20,8 @@ body {
   height: 100%;
   main {
     min-height: calc(100% - (62px + 48px));
-    .container {
+    .container,
+    .container-slim {
       height: 100%;
     }
   }
