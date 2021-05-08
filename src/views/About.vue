@@ -46,6 +46,7 @@ export default {
   background: #ffffff;
   border-radius: 6px;
   box-shadow: 0 4px 18px -8px var(--primary);
+  margin-bottom: 24px;
   p {
     font-family: "Roboto";
     color: var(--dark);
