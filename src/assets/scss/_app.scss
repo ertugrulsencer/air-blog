@@ -19,7 +19,7 @@ body {
 .wrapper {
   height: 100%;
   main {
-    min-height: calc(100% - (62px + 48px));
+    min-height: calc(100% - (62px + 24px + 48px));
     .container,
     .container-slim {
       height: 100%;
