@@ -1,7 +1,9 @@
 <template>
   <div class="wrapper">
     <AppHeader />
-    <router-view />
+    <transition name="fade-translate" mode="out-in">
+      <router-view />
+    </transition>
     <AppFooter />
   </div>
 </template>

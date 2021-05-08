@@ -1,14 +1,21 @@
 const state = {
   informations: {},
+  socialMediaLinks: [],
 };
 const getters = {
   personalInfo(state) {
     return state.informations;
   },
+  socialMedia(state) {
+    return state.socialMediaLinks;
+  },
 };
 const mutations = {
   setInfo(state, data) {
     state.informations = data;
+  },
+  setSocialMedia(state, data) {
+    state.socialMediaLinks = data;
   },
 };
 const actions = {
@@ -21,6 +28,23 @@ const actions = {
         "https://ertugrulsencer.github.io/sencertugrul.com/images/avatar.jpg",
     };
     context.commit("setInfo", data);
+  },
+  getSocialMediaLinks(context) {
+    let data = [
+      {
+        url: "https://instagram.com/ertugrulsencer_/",
+        icon: "fab fa-instagram",
+      },
+      {
+        url: "https://youtube.com/",
+        icon: "fab fa-youtube",
+      },
+      {
+        url: "https://sencertugrul.online/",
+        icon: "fas fa-globe",
+      },
+    ];
+    context.commit("setSocialMedia", data);
   },
 };
 

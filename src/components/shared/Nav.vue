@@ -13,7 +13,7 @@
       </li>
       <li>
         <router-link exact-active-class="active" :to="{ name: 'About' }"
-          >Hakkımızda</router-link
+          >Hakkımda</router-link
         >
       </li>
     </ul>

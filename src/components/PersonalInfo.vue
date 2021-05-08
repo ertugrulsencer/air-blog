@@ -6,12 +6,26 @@
       </div>
       <strong class="persanel-name"> {{ persanel.name }} </strong>
       <p class="persanel-about">{{ persanel.about }}</p>
+      <SocialMediaLinks :links="socilaMediaLinks" />
     </header>
   </div>
 </template>
 
 <script>
+import SocialMediaLinks from "./SocialMediaLinks";
 export default {
+  name: "",
+  components: {
+    SocialMediaLinks,
+  },
+  created() {
+    this.$store.dispatch("getSocialMediaLinks");
+  },
+  computed: {
+    socilaMediaLinks() {
+      return this.$store.getters.socialMedia;
+    },
+  },
   props: {
     persanel: {
       type: Object,
