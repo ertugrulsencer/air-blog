@@ -21,6 +21,9 @@ export default {
 @import "@/assets/scss/_mixins.scss";
 header.header {
   @include flex;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   height: 62px;
   background: #ffffff;
   box-shadow: 0 2px 18px -4px var(--gray);
