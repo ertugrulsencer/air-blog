@@ -25,9 +25,14 @@ export default {
 @import "@/assets/scss/_mixins.scss";
 header.persanel-info {
   @include flex(center, center, column);
+  margin-top: 24px;
+  padding: 24px 18px;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px -8px var(--primary);
   .persanel {
     &-avatar {
-      margin: 24px 0 0;
+      margin: 14px 0 0;
       img {
         border: 3.5px dashed var(--primary);
         border-radius: 50%;
