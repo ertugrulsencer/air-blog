@@ -52,10 +52,11 @@ export default {
   padding: calc(24px - 18px) 0;
 }
 .article {
-  padding: 18px 0;
-  &:not(:last-child) {
-    border-bottom: 2px solid var(--gray);
-  }
+  padding: 18px 14px;
+  border-radius: 6px;
+  background: #ffffff;
+  border-bottom: 2px solid var(--gray);
+  margin-bottom: 18px;
   .article-header {
     font-weight: 600;
     font-size: 1.5rem;

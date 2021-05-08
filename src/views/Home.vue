@@ -33,7 +33,7 @@ export default {
 
 <style lang="scss" scoped>
 .header-text {
-  margin-top: 24px;
+  margin: 24px 0;
   font-size: 1.75rem;
   color: var(--dark);
 }
