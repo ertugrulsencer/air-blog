@@ -66,7 +66,7 @@ export default {
   }
   .article-description {
     line-height: 150%;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--dark);
     font-family: "Roboto";
